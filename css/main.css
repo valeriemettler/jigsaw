@@ -1,0 +1,71 @@
+body {
+    position: relative;
+}
+.wrapper {
+    width: 1400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 92px 0 0 -680px;
+}
+.image {
+    background-image: url('../img/nature-guided2.jpg');
+    margin: 10px;
+    height: 400px;
+    width: 426px;
+    float: left;/* background: no-repeat;*/
+}
+
+/* box 1 top left corner*/
+
+/*.box1 {
+background-position: -1280px 0px;
+width: 428px;
+height: 424px;
+float: left;
+}*/
+
+/* box 2 middle top*/
+
+/*.box2{
+background-position: -1700px 802.9px;
+width: 432px;
+height: 430px;
+float: left;
+}*/
+
+/* box 3 top right corner*/
+
+/*.box3{
+background-position: -2130px 802.9px;
+width: 432px;
+height: 430px;
+float: left;
+}*/
+
+/* box 4 bottom left corner*/
+
+/*.box4 {
+background-position: -1280px -420px;
+width: 428px;
+height: 374px;
+float: left;
+}*/
+
+/* box 5 middle top*/
+
+/*.box5{
+background-position: -1700px 372.9px;
+width: 432px;
+height: 370px;
+float: left;
+}*/
+
+/* box 6 top right corner*/
+
+/*.box6{
+background-position: -2130px 372.9px;
+width: 432px;
+height: 380px;
+float: left;
+}*/
