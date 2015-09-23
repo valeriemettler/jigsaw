@@ -17,15 +17,12 @@ var bgpos2 = [[-2130, 803],
 
 var x;
 var y;
-var z;
+
 
 // var posStr = function(x, y){
 // };
 
-var bkgPos = function (x,y) {
-    z = "" + x + "px " + y + "px";
-    return z;
-};
+var bkgPos = function (x,y) { return "" + x + "px " + y + "px"; };
 
 $(document).ready(function() {
 
@@ -35,10 +32,8 @@ $(document).ready(function() {
                 //b = bgpos[i][1];
                 c = bgpos2[i][0];
                 d = bgpos2[i][1];
-
                 //bkgPos(a, b);
-                 bkgPos(c, d);
-            $('.box' + i).css({"background-position": z});
+            $('.box' + i).css({"background-position": bkgPos(c, d)});
         }
 }
 displayPic();
