@@ -1,6 +1,13 @@
 body {
     position: relative;
 }
+
+img {
+/*    height: 800px;
+    width: 1280px;*/
+    display: none;
+
+}
 .wrapper {
     width: 1400px;
     position: absolute;
@@ -13,7 +20,8 @@ body {
     margin: 10px;
     height: 400px;
     width: 426px;
-    float: left;/* background: no-repeat;*/
+    float: left;
+    /* background: no-repeat;*/
 }
 
 /* box 1 top left corner*/

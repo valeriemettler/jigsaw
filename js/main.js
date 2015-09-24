@@ -30,15 +30,62 @@ var iPos = function(w, h){
     return newbgPos;
 };
 
+var iPos = function(){
+
+    $('img').each(function() {
+        $(this).attr('width',$(this).width());
+        //console.log($(this).width()); //returns 1280
+        w = $(this).width();
+    })
+
+        $('img').each(function() {
+        $(this).attr('height',$(this).height());
+       //console.log(typeof $(this).height()); //returns 800 typeof is number
+        h = $(this).height();
+    })
+
+
+    var newbgPos = [[ -(w), h],
+                    [ -(w + (w/3)), h],
+                    [ -((w +(w/3)) + (w/3)), h],
+                    [ -(w),  h/2],
+                    [ -(w + (w/3)), h/2],
+                    [ -((w +(w/3)) + (w/3)), h/2],
+                   ];
+    console.log(newbgPos);
+    return newbgPos;
+};
+
 // var posStr = function(x, y){
 // };
 
 var bkgPos = function (x,y) { return "" + x + "px " + y + "px"; };
 
+//     var picW = function() {
+//     $('img').each(function() {
+//         $(this).attr('width',$(this).width());
+//         //console.log($(this).width()); //returns 1280
+//         return $(this).width();
+//     })
+// };
+
+//     var picH = function() {
+//     $('img').each(function() {
+//         $(this).attr('height',$(this).height());
+//        //console.log(typeof $(this).height()); //returns 800 typeof is number
+//         return $(this).height();
+//     })
+// };
+
 $(document).ready(function() {
 
     //image length and width output to replace bgpos
-    var pic = iPos(1280, 800);
+
+    var pic = iPos();
+    // var pic = iPos(picW(), picH());
+   // console.log(typeof iPos(picW(), picH())); //undefined
+    //console.log(pic);
+    //var pic = iPos(1280, 800);
 
     var displayPic = function() {
         for (var i = 0; i < pic.length;i++) {
