@@ -5,23 +5,24 @@ img {
 /*    height: 800px;
     width: 1280px;*/
     display: none;
-
 }
 .wrapper {
-    width: 1400px;
+  /*  width: 1280px;*/
     position: absolute;
-    top: 50%;
+/*    top: 50%;
     left: 50%;
-    margin: 35px 0 0 -680px;
+    margin: 35px 0 0 -680px;*/
 }
 .image {
-    background-image: url('../img/nature.jpg');
-    margin: 10px;
-    height: 400px;
-    width: 426px;
+   /* background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150);*/
+   /* background-image: url('../img/nature-guided3.jpg');*/
+    margin: 5px;
+/*    height: 400px;
+    width: 426px;*/
     float: left;
     /* background: no-repeat;*/
 }
 .buttons {
-    margin-left: 600px;
+   margin: auto;
+   width: 500px;
 }
