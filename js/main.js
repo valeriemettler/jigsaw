@@ -1,7 +1,8 @@
 var setUrlInputHandler = function() {
     $("#buttonSeturl").on('click', function(event) {
         event.stopPropagation();
-        main();
+        var url = $('#url').val();
+        getPicSize(url);
     });
 };
 
@@ -9,24 +10,31 @@ $(document).ready(function() {
     setUrlInputHandler();
 });
 
-var main = function() {
-    var url = $('#url').val();
-    var dim = getPicSize(url);
-    var height = dim["height"];
-    var width = dim["width"];
-    var pieces = cutPic(width, height);
+var chop = function(w, h) {
+    $('.bigbox').css({
+        "width": w + 32,
+        "height": h - 20
+    });
+    var pieces = cutPic(w, h);
     displayPieces(url, pieces);
-};
+}
 
 var getPicSize = function(url) {
-    //send url to #pic img tag in html
-    //get width and height
-    //return width, height and url
-    console.log(url);
-    return {"width": "10px", "height": "5px"}
+    //get image size
+    var image = new Image();
+    image.onload = function() {
+        console.log("loaded");
+        var w = image.width;
+        var h = image.height;
+        console.log(w);
+        console.log(h);
+        chop(w, h);
+    }
+    image.src = url;
+    return;
 };
 
-var cutPic = function(width, height){
+var cutPic = function(width, height) {
     console.log(width);
     console.log(height);
     var pieces = [
