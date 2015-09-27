@@ -7,22 +7,23 @@ img {
     display: none;
 }
 .wrapper {
-  /*  width: 1280px;*/
-    position: absolute;
-/*    top: 50%;
-    left: 50%;
-    margin: 35px 0 0 -680px;*/
 }
+
 .image {
-   /* background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150);*/
-   /* background-image: url('../img/nature-guided3.jpg');*/
-    margin: 5px;
-/*    height: 400px;
-    width: 426px;*/
-    float: left;
-    /* background: no-repeat;*/
+    margin: 10px;
+    display: inline-block;
 }
-.buttons {
+.userinput {
    margin: auto;
-   width: 500px;
+   width: 220px;
+   margin-bottom:20px;
+}
+
+button {
+  margin:10px 5px 10px 0px;
+  width:64px;
+}
+
+.bigbox {
+  text-align:center;
 }
