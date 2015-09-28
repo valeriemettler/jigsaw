@@ -6,12 +6,14 @@ img {
     width: 1280px;*/
     display: none;
 }
-.wrapper {
-}
 
-.image {
-    margin: 10px;
-    display: inline-block;
+.piece {
+   /* margin: 10px;*/
+   display: inline-block;
+}
+.box {
+   margin: 10px;
+/*   padding: 1px;*/
 }
 .userinput {
    margin: auto;
