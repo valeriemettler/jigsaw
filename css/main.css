@@ -1,31 +1,24 @@
 body {
-    position: relative;
+  position: relative;
 }
 img {
-/*    height: 800px;
-    width: 1280px;*/
-    display: none;
+  display: none;
 }
-
 .piece {
-   /* margin: 10px;*/
-   display: inline-block;
+  display: inline-block;
 }
 .box {
-   margin: 10px;
-/*   padding: 1px;*/
+  margin: 10px;
 }
 .userinput {
-   margin: auto;
-   width: 220px;
-   margin-bottom:20px;
+  margin: auto;
+  width: 220px;
+  margin-bottom: 20px;
 }
-
 button {
-  margin:10px 5px 10px 0px;
-  width:64px;
+  margin: 10px 5px 10px 0px;
+  width: 64px;
 }
-
 .bigbox {
-  text-align:center;
+  text-align: center;
 }

@@ -47,21 +47,15 @@ var shuf = function(pieces) {
 var render = function(w, h, url, pieces) {
     var tall = h / 2;
     var wide = w / 3;
-    console.log("xxx");
-    console.log(w, h, wide, tall);
     displayPieces(url, pieces, tall, wide);
 };
 
 var getPicSize = function(url) {
-    //get image size
     var image = new Image();
 
     image.onload = function() {
-        console.log("loaded");
         var w = image.width;
         var h = image.height;
-        console.log(w);
-        console.log(h);
         chop(w, h, url);
     };
     image.src = url;
@@ -69,15 +63,11 @@ var getPicSize = function(url) {
 };
 
 var getPicSizeShuffled = function(url) {
-    //get image size
     var image = new Image();
 
     image.onload = function() {
-        console.log("loaded");
         var w = image.width;
         var h = image.height;
-        console.log(w);
-        console.log(h);
         chopandshuffle(w, h, url);
     };
     image.src = url;
@@ -85,8 +75,6 @@ var getPicSizeShuffled = function(url) {
 };
 
 var cutPic = function(w, h) {
-    console.log(w);
-    console.log(h);
     var pieces = [
         [-(w), h],
         [-(w + (w / 3)), h],
@@ -95,7 +83,6 @@ var cutPic = function(w, h) {
         [-(w + (w / 3)), h / 2],
         [-((w + (w / 3)) + (w / 3)), h / 2],
     ];
-    console.log(pieces);
     return pieces;
 };
 
@@ -106,14 +93,11 @@ var bkgPos = function(x, y) {
 var handleDropEvent = function(event, ui) {
     var draggable = ui.draggable;
 }
+
 var displayPieces = function(url, pieces, tall, wide) {
-    console.log("displayPieces url", url);
-    console.log("displayPieces pieces", pieces);
     for (var i = 0; i < pieces.length; i++) {
         var a = pieces[i][0];
         var b = pieces[i][1];
-        console.log("a, b", a, b);
-        console.log(bkgPos(a, b));
         $('.box' + i).css({
             "background-position": bkgPos(a, b),
             "height": (tall) + "px",
@@ -137,13 +121,5 @@ var displayPieces = function(url, pieces, tall, wide) {
             snap: '.box',
             stack: '.box'
         });
-
     }
-    // $('.box6').css({
-    //     "height": tall + "px",
-    //     "width": wide + "px",
-    //     "border": "1px solid black"
-    // });
-
-
 };

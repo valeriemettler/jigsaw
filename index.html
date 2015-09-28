@@ -33,29 +33,32 @@
                 </div>
             </nav>
             <!-- Navbar Ends -->
-            <div class="wrapper">
-                <div class="userinput">
-                    <input type="text"id="url"class="form-control"placeholder="Image URL" value="http://peanutonthetable.com/wp-content/uploads/2013/01/happy-puppy.jpg" />
-                    <button id="buttonSeturl"type="button" class="btn btn-danger btn-xs">Enter URL</button>
-                    <button id="shuffle"type="button"class="btn btn-danger btn-xs">Shuffle</button>
-                    <button id="solve"type="button"class="btn btn-danger btn-xs">Solve</button>
-                </div>
-                <div class="bigbox">
-                    <div class="imgrow">
+            <!-- URL Input and Buttons -->
+            <div class="userinput">
+                <input type="text"id="url"class="form-control"placeholder="Image URL" value="" />
+                <button id="buttonSeturl"type="button" class="btn btn-danger btn-xs">Enter URL</button>
+                <button id="shuffle"type="button"class="btn btn-danger btn-xs">Shuffle</button>
+                <button id="solve"type="button"class="btn btn-danger btn-xs">Solve</button>
+            </div>
+            <!-- End URL Input and Buttons -->
+            <!-- Puzzle -->
+            <div class="container-fluid bigbox">
+                <div class="row">
+                    <div class="col-xs-12">
                         <div class="piece box box0"><div class="piece image image0"></div></div>
                         <div class="piece box box1"><div class="piece image image1"></div></div>
                         <div class="piece box box2"><div class="piece image image2"></div></div>
                     </div>
-                    <div class="imgrow">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
                         <div class="piece box box3"><div class="piece image image3"></div></div>
                         <div class="piece box box4"><div class="piece image image4"></div></div>
                         <div class="piece box box5"><div class="piece image image5"></div></div>
                     </div>
-<!--                     <div class="imgrow">
-                        <div class="piece box box6"></div>
-                    </div> -->
                 </div>
             </div>
+            <!-- Puzzle Ends -->
             <script src="js/jquery.js"></script>
             <script src="js/jquery.ui.js"></script>
             <script src="js/bootstrap.js"></script>
