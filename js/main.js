@@ -24,6 +24,7 @@ $(document).ready(function() {
 
 var chop = function(w, h, url) {
     var pieces = cutPic(w, h);
+    console.log(pieces);
     render(w, h, url, pieces);
 };
 
@@ -52,7 +53,6 @@ var render = function(w, h, url, pieces) {
 
 var getPicSize = function(url) {
     var image = new Image();
-
     image.onload = function() {
         var w = image.width;
         var h = image.height;
@@ -102,7 +102,7 @@ var displayPieces = function(url, pieces, tall, wide) {
             "background-position": bkgPos(a, b),
             "height": (tall) + "px",
             "width": (wide) + "px",
-            "border": "1px solid black"
+            "border": "1px solid black",
         });
 
         $('.box' + i).droppable({
@@ -114,7 +114,9 @@ var displayPieces = function(url, pieces, tall, wide) {
             "background-position": bkgPos(a, b),
             "height": tall + "px",
             "width": wide + "px",
-            "background-image": "url('" + url + "')"
+            "background-image": "url('" + url + "')",
+            "top": "initial",
+            "left": "initial"
         });
 
         $('.image' + i).draggable({
