@@ -34,24 +34,42 @@
             </nav>
             <!-- Navbar Ends -->
             <!-- URL Input and Buttons -->
-            <div class="userinput">
-                <input type="text"id="url"class="form-control"placeholder="Image URL" value="" />
-                <button id="buttonSeturl"type="button" class="btn btn-danger btn-xs">Enter URL</button>
-                <button id="shuffle"type="button"class="btn btn-danger btn-xs">Shuffle</button>
-                <button id="solve"type="button"class="btn btn-danger btn-xs">Solve</button>
+            <div class="userinput form-inline">
+                <div class="input-group">
+                    <div class="controls">
+                        <input type="text"id="url"class="form-control"
+                        placeholder="Image URL" value="" />
+                        <button id="buttonSeturl"type="button"
+                        class="btn btn-default btn-md">Enter URL</button>
+                    </div>
+                </div>
+                <!-- Image Links -->
+                <div class="links">
+                    <!--Easy: cats hugging  http://i.imgur.com/MHJm5Nf.jpg -->
+                    <a href="http://i.imgur.com/MHJm5Nf.jpg" target="_blank" class="link">Awww</a>
+                    <!--Hard: Redwoods  http://i.imgur.com/mO0xfbu.jpg -->
+                    <a href="http://i.imgur.com/mO0xfbu.jpg" target="_blank" class="link">Redwood</a>
+                    <!--Hard: Winter http://i.imgur.com/UChlRbU.jpg -->
+                    <a href="http://i.imgur.com/UChlRbU.jpg" target="_blank" class="link">Winter</a>
+                    <!--Very Difficult: Relativity (M. C. Escher) http://i.imgur.com/VqvY68W.jpg -->
+                    <a href="http://i.imgur.com/VqvY68W.jpg" target="_blank" class="link">Escher</a>
+                    <!--Very Difficult: There's a Dragon in my Art Room (Jackson Pollock) http://i.imgur.com/PfG0cPw.jpg -->
+                    <a href="http://i.imgur.com/PfG0cPw.jpg" target="_blank" class="link">Pollock</a>
+                </div>
+                <!-- End Image Links -->
             </div>
             <!-- End URL Input and Buttons -->
             <!-- Puzzle -->
             <div class="container-fluid bigbox">
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="imgrow">
                         <div class="piece box box0"><div class="piece image image0"></div></div>
                         <div class="piece box box1"><div class="piece image image1"></div></div>
                         <div class="piece box box2"><div class="piece image image2"></div></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="imgrow">
                         <div class="piece box box3"><div class="piece image image3"></div></div>
                         <div class="piece box box4"><div class="piece image image4"></div></div>
                         <div class="piece box box5"><div class="piece image image5"></div></div>
@@ -59,6 +77,10 @@
                 </div>
             </div>
             <!-- Puzzle Ends -->
+            <div class="control">
+                <button id="shuffle"type="button"class="btn btn-danger btn-md">Shuffle</button>
+                <button id="solve"type="button"class="btn btn-danger btn-md">Solve</button>
+            </div>
             <script src="js/jquery.js"></script>
             <script src="js/jquery.ui.js"></script>
             <script src="js/bootstrap.js"></script>

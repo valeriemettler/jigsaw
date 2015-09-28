@@ -1,24 +1,43 @@
-body {
-  position: relative;
-}
-img {
-  display: none;
-}
 .piece {
   display: inline-block;
 }
 .box {
   margin: 10px;
 }
+.imgrow {
+  min-width: 500px;
+}
 .userinput {
   margin: auto;
-  width: 220px;
-  margin-bottom: 20px;
+  width: 340px;
+  text-align: center;
 }
-button {
-  margin: 10px 5px 10px 0px;
-  width: 64px;
+.form-control {
+  width: 210px;
+  margin: 0 10px 10px 0;
+}
+.buttons {
+  margin: 6px 5px 10px 0px;
+}
+#shuffle {
+  margin: 5px;
+}
+#solve {
+  margin: 5px;
+  padding: 6px 18px;
+}
+.links {
+  margin: 9px 9px 9px 11px;
+}
+.link {
+  margin-left: 5px;
 }
 .bigbox {
   text-align: center;
+}
+.control {
+  text-align: center;
+}
+button {
+
 }

@@ -16,15 +16,24 @@ var setHandlers = function() {
         var url = $('#url').val();
         getPicSizeShuffled(url);
     });
+    $('.link').on('click', function(event) {
+        event.stopPropagation();
+        var url = $(this).attr("href");
+        $('#url').val(url);
+        getPicSize(url);
+        return false;
+    });
 };
 
 $(document).ready(function() {
     setHandlers();
+    var url = 'http://i.imgur.com/mO0xfbu.jpg';
+    $('#url').val(url);
+    getPicSize(url);
 });
 
 var chop = function(w, h, url) {
     var pieces = cutPic(w, h);
-    console.log(pieces);
     render(w, h, url, pieces);
 };
 
@@ -71,6 +80,7 @@ var getPicSizeShuffled = function(url) {
         chopandshuffle(w, h, url);
     };
     image.src = url;
+    console.log(image.src = url);
     return;
 };
 
