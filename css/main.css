@@ -1,3 +1,7 @@
+.navbar-default {
+    background-color: #f6f8f9;
+    border-color: #e7e7e7;
+}
 .piece {
   display: inline-block;
 }
