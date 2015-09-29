@@ -12,8 +12,10 @@
   width: 340px;
   text-align: center;
 }
+#url{
+  width: 244px;
+}
 .form-control {
-  width: 210px;
   margin: 0 10px 10px 0;
 }
 .buttons {
@@ -27,7 +29,7 @@
   padding: 6px 18px;
 }
 .links {
-  margin: 9px 9px 9px 11px;
+  margin: 9px -73px 9px 11px;
 }
 .link {
   margin-left: 5px;
@@ -35,9 +37,33 @@
 .bigbox {
   text-align: center;
 }
-.control {
-  text-align: center;
+#control {
+  text-align: left;
+  margin-left: 167px;
 }
-button {
+.controls {
+  min-width: 600px;
+  margin-left: 25px;
+}
+#buttonSeturl {
+  margin: 0px 251px 0px -5px
+}
 
+@media screen and (min-width:420px) {
+  #control {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .links {
+    margin: 9px 9px 9px 11px;
+  }
+  #buttonSeturl {
+    margin: 0px 251px 0px -5px
+  }
+  #url{
+    width: 244px;
+  }
+  .controls {
+    margin-left: 0px;
+  }
 }
