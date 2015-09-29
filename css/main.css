@@ -40,6 +40,7 @@
 #control {
   text-align: left;
   margin-left: 167px;
+  width: 600px;
 }
 .controls {
   min-width: 600px;
