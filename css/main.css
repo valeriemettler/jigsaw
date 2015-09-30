@@ -1,6 +1,13 @@
+#logo {
+  height: 100%;
+  margin: 0px -2px 5px 0;
+}
+.navbar-brand > img {
+  display: inline-block;
+}
 .navbar-default {
-    background-color: #f6f8f9;
-    border-color: #e7e7e7;
+  background-color: #f6f8f9;
+  border-color: #e7e7e7;
 }
 .piece {
   display: inline-block;
@@ -16,7 +23,7 @@
   width: 340px;
   text-align: center;
 }
-#url{
+#url {
   width: 244px;
 }
 .form-control {
@@ -52,7 +59,6 @@
 #buttonSeturl {
   margin: 0px 251px 0px -5px
 }
-
 @media screen and (min-width:420px) {
   #control {
     text-align: center;
@@ -64,10 +70,13 @@
   #buttonSeturl {
     margin: 0px 251px 0px -5px
   }
-  #url{
+  #url {
     width: 244px;
   }
   .controls {
     margin-left: 0px;
+  }
+  #logo {
+    height: 120%;
   }
 }
